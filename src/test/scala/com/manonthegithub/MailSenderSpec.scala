@@ -15,7 +15,7 @@ class MailSenderSpec extends WordSpec {
       val singleRecip = Array("mytrashpostbox@gmail.com")
       val multRecips = singleRecip :+ "mydealmailbox@gmail.com"
 
-      val sender = MailSender("smtp.yandex.ru", 465, "robot@bookpleasure.ru", "1qaz@WSX")
+      val sender = MailSender("smtp.yandex.ru", 465, "ppp", "1ppp")
 
       println(System.currentTimeMillis() / 1000)
       sender.send("Hello", "It's me!", singleRecip)
